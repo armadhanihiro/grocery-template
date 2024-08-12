@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>H2H Market</title>
+
+    <!-- Fonts Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,600;0,700;1,600;1,700&display=swap" rel="stylesheet" />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="css/product.css" />
+
+    <!-- AlpineJS -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <!-- App -->
+    <script src="src/app.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="#" class="navbar-logo"><span>H2H</span>Market</a>
+
+      <div class="navbar-nav">
+        <a href="index.html">Home</a>
+        <a href="#about">About</a>
+        <a href="products.html">Products</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="search-button">[SVG-Search]</a>
+        <a href="#" id="shopping-cart-button">[SVG-Chart]</a>
+        <a href="#" id="grocery-products">[SVG-Bar]</a>
+      </div>
+
+      <!-- Search Form start -->
+      <div class="search-form">
+        <input type="search" id="search-box" placeholder="search here..." />
+        <label for="search-box"><i data-feather="search"></i></label>
+      </div>
+      <!-- Search Form end -->
+
+      <!-- Shopping Cart start -->
+      <div class="shopping-cart">
+        <div class="cart-item">
+          <img src="[IMG-Products-1]" alt="Rice" />
+          <div class="item-detail">
+            <h3>Tomato Soup</h3>
+            <div class="item-price">IDR 15K</div>
+          </div>
+          <i class="remove-item">[SVG-Trash]</i>
+        </div>
+        <div class="cart-item">
+          <img src="[IMG-Products-2]" alt="Rice" />
+          <div class="item-detail">
+            <h3>Rice</h3>
+            <div class="item-price">IDR 24K</div>
+          </div>
+          <i class="remove-item">[SVG-Trash]</i>
+        </div>
+        <div class="cart-item">
+          <img src="[IMG-Products-3]" alt="Rice" />
+          <div class="item-detail">
+            <h3>Lemon</h3>
+            <div class="item-price">IDR 8K</div>
+          </div>
+          <i class="remove-item">[SVG-Trash]</i>
+        </div>
+      </div>
+
+      <!-- Shopping Cart end -->
+    </nav>
+    <!-- Navbar end -->
+
+    <section class="products" id="products">
+      <h2><span>Produk Unggulan</span> Kami</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo unde eum, ab fuga possimus iste.</p>
+
+      <div class="row">
+        <div class="product-card">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+          </div>
+          <div class="product-image">
+            <img src="[IMG-Products-1]" alt="Product 1" />
+          </div>
+          <div class="product-content">
+            <h3>Rice</h3>
+            <div class="product-stars">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star"></i>
+            </div>
+            <div class="product-price">IDR 15K <span>IDR 24K</span></div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+          </div>
+          <div class="product-image">
+            <img src="[IMG-Products-2]" alt="Product 1" />
+          </div>
+          <div class="product-content">
+            <h3>Tomato Soup</h3>
+            <div class="product-stars">
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+            </div>
+            <div class="product-price">IDR 24K <span>IDR 43K</span></div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+          </div>
+          <div class="product-image">
+            <img src="[IMG-Products-3]" alt="Product 1" />
+          </div>
+          <div class="product-content">
+            <h3>Lemon</h3>
+            <div class="product-stars">
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+            </div>
+            <div class="product-price">IDR 8K <span>IDR 15K</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Products Section end -->
+  </body>
+</html>
