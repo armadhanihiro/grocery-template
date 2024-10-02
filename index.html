@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>H2H Market</title>
+    <title>Grocery Groove</title>
 
     <!-- Fonts Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,40 +16,33 @@
 
     <!-- Style -->
     <link rel="stylesheet" href="css/style.css" />
-
-    <!-- AlpineJS -->
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-
-    <!-- App -->
-    <script src="src/app.js"></script>
   </head>
   <body>
     <!-- Navbar start -->
     <nav class="navbar">
-      <a href="#" class="navbar-logo"><span>H2H</span>Market</a>
+      <a href="#" class="navbar-logo">Grocery <span>Groove</span></a>
 
-      <div class="navbar-nav">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#products">Products</a>
-        <a href="#contact">Contact</a>
-      </div>
-
-      <div class="navbar-extra">
-        <a href="#" id="grocery-products"><i data-feather="menu"></i></a>
-      </div>
+        <div class="navbar-extra">
+          <a href="#" id="grocery-products"><i data-feather="menu"></i></a>
+        </div>
+        
+        <div class="navbar-nav">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#best-seller">Products</a>
+          <a href="#contact">Contact</a>
+        </div>
     </nav>
     <!-- Navbar end -->
 
     <!-- Hero Section start  -->
     <section class="hero" id="home">
       <main class="content">
-        <h1>Convenient, Fast, and Fresh Grocery Delivery</h1>
-        <p>Enjoy superior taste and quality with our carefully selected groceries, delivered with a commitment to excellence for an exceptional dining experience.</p>
-        <a href="#products" class="cta">Buy Now!</a>
+          <h1>Convenient, Fast, and Fresh Grocery Delivery</h1>
+          <p>Enjoy superior taste and quality with our carefully selected groceries, delivered with a commitment to excellence for an exceptional dining experience.</p>
+          <a href="#products" class="cta">Book a Delivery!</a>
       </main>
     </section>
-
     <!-- Hero Section end-->
 
     <!-- About Section start -->
@@ -57,140 +50,354 @@
       <h2>About Us</h2>
 
       <div class="row">
-        <div class="about-img">
-          <img src="img/about-us.jpg" alt="About Us" />
-        </div>
-        <div class="content">
-          <h3>Why Choose Us?</h3>
-          <p>
-            At <span>H2H Market</span>, we are more than just a grocery store—we are your partner in fresh, convenient, and quality-driven shopping experiences. Our journey began with a vision to redefine how you shop for groceries,
-            focusing on bringing the freshest ingredients and finest products directly to your doorstep. Our commitment to quality is unwavering; we meticulously source from trusted suppliers and foster local partnerships to ensure every
-            item meets our rigorous standards. From farm-fresh produce to gourmet delights and pantry staples, each selection is curated with care to elevate your meals and simplify your life. What drives us is our passion for excellence in
-            every aspect of your shopping journey.
-          </p>
-        </div>
+          <div class="about-img">
+              <img src="img/about-us.jpg" alt="About Us" />
+          </div>
+          <div class="content">
+              <h3>Why Choose Us?</h3>
+              <p>At <span>H2H Market</span>, we are more than just a grocery store—we are your partner in fresh, convenient, and quality driven shopping experiences. Our journey began with a vision to redefine how you shop for groceries, focusing on bringing the freshest ingredients and finest products directly to your doorstep. Our commitment to quality is unwavering; we meticulously source from trusted suppliers and foster local partnerships to ensure every item meets our rigorous standards.</p>
+          </div>
+      </div>
+    </section>
+    <!-- About Section end -->
+
+    <!-- Services Section start -->
+    <section id="services" class="services">
+      <h2>Our Services</h2>
+      <div class="services-container">
+          <div class="service-card">
+              <img src="img/services/5.png" alt="img1">
+              <h3>Fresh Produce Delivery</h3>
+              <p>Enjoy farm-fresh produce delivered directly to your door.</p>
+          </div>
+          <div class="service-card">
+              <img src="img/services/6.png" alt="img2">
+              <h3>Same-Day Delivery</h3>
+              <p>Need groceries in a hurry? Our same-day delivery service ensures that your essentials arrive quickly and conveniently.</p>
+          </div>
+          <div class="service-card">
+              <img src="img/services/7.png" alt="img3">
+              <h3>Specialty Foods</h3>
+              <p>Indulge in our selection of gourmet and specialty foods, sourced from around the world.</p>
+          </div>
+          <div class="service-card">
+              <img src="img/services/8.png" alt="img4">
+              <h3>Personalized Experience</h3>
+              <p>Get tailored recommendations with our personalized shopping service.</p>
+          </div>
+      </div>
+    </section>
+    <!-- Services Section end -->
+
+    <!-- Best Seller start -->
+    <section id="best-seller" class="best-seller">
+      <h2>Our Best Seller</h2>
+      <p>Explore our collection of best-seller products, where customer favorites shine. These top picks, featuring fresh produce, pantry essentials, and more, have become household staples for their exceptional quality and taste. Join our satisfied customers and see why these products are the best of the best.</p>
+
+      <div class="row-best">
+          <div class="product-card-best">
+              <div class="product-image-best">
+                  <img src="img/products/1.jpg" alt="Rice">
+                  <div class="overlay">
+                      <button type="button" class="view-btn" data-modal="modal-1">View</button>
+                  </div>
+              </div>
+              <div class="product-content-best">
+                  <h3>Rice</h3>
+                  <div class="product-price-best">IDR 8K <span>IDR 15K</span></div>
+              </div>
+          </div>
+          <div class="product-card-best">
+              <div class="product-image-best">
+                  <img src="img/products/2.jpg" alt="Tomato Soup">
+                  <div class="overlay">
+                      <button type="button" class="view-btn" data-modal="modal-2">View</button>
+                  </div>
+              </div>
+              <div class="product-content-best">
+                  <h3>Tomato Soup</h3>
+                  <div class="product-price-best">IDR 20K <span>IDR 24K</span></div>
+              </div>
+          </div>
+          <div class="product-card-best">
+              <div class="product-image-best">
+                  <img src="img/products/3.jpg" alt="Lemon">
+                  <div class="overlay">
+                      <button type="button" class="view-btn" data-modal="modal-3">View</button>
+                  </div>
+              </div>
+              <div class="product-content-best">
+                  <h3>Lemon</h3>
+                  <div class="product-price-best">IDR 5K <span>IDR 8K</span></div>
+              </div>
+          </div>
       </div>
     </section>
 
-    <!-- About Section end -->
+    <!-- Modal Structure -->
+    <div id="modal-1" class="modal">
+      <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Rice</h2>
+          <img src="img/products/1.jpg" alt="Rice">
+          <p>This is a premium quality rice, perfect for all your cooking needs. Sourced from the best farms, it offers excellent taste and texture.</p>
+          <div class="product-price-best">IDR 8K <span>IDR 15K</span></div>
+          <button type="button" class="add-to-cart-btn">Add to Cart</button>
+      </div>
+    </div>
+
+    <div id="modal-2" class="modal">
+      <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Tomato Soup</h2>
+          <img src="img/products/2.jpg" alt="Tomato Soup">
+          <p>A rich and flavorful tomato soup made from fresh tomatoes. Perfect for a quick meal or as a base for other dishes.</p>
+          <div class="product-price-best">IDR 20K <span>IDR 24K</span></div>
+          <button type="button" class="add-to-cart-btn">Add to Cart</button>
+      </div>
+    </div>
+
+    <div id="modal-3" class="modal">
+      <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Lemon</h2>
+          <img src="img/products/3.jpg" alt="Lemon">
+          <p>Fresh lemons perfect for adding a zesty flavor to your dishes or for making refreshing lemonade.</p>
+          <div class="product-price-best">IDR 5K <span>IDR 8K</span></div>
+          <button type="button" class="add-to-cart-btn">Add to Cart</button>
+      </div>
+    </div>
+    <!-- Best Seller end -->
 
     <!-- Products Section start -->
-
     <section id="products" class="products">
       <h2>Products</h2>
-      <p>
-        Discover our range of fresh ingredients and gourmet selections, sourced from trusted suppliers and local producers. From artisanal goods to household staples, we offer options to suit every taste and dietary preference, delivered
-        conveniently to your door.
-      </p>
+      <p>Discover our range of fresh ingredients and gourmet selections, sourced from trusted suppliers and local producers. From artisanal goods to household staples, we offer options to suit every taste and dietary preference, delivered conveniently to your door.</p>
 
-      <div class="row">
-        <div class="products-card">
-          <img src="img/products/1.jpg" alt="Rice" />
-          <h3 class="products-card-title">Rice</h3>
-          <p class="products-card-price">IDR 15K</p>
-          <button type="button" class="cart-btn">Add to Cart</button>
-        </div>
-        <div class="products-card">
-          <img src="img/products/2.jpg" alt="Tomato Soup" />
-          <h3 class="products-card-title">Tomato Soup</h3>
-          <p class="products-card-price">IDR 24K</p>
-          <button type="button" class="cart-btn">Add to Cart</button>
-        </div>
-        <div class="products-card">
-          <img src="img/products/3.jpg" alt="Lemon" />
-          <h3 class="products-card-title">Lemon</h3>
-          <p class="products-card-price">IDR 8K</p>
-          <button type="button" class="cart-btn">Add to Cart</button>
-        </div>
-        <div class="products-card">
-          <img src="img/products/4.jpg" alt="Coffee Beans" />
-          <h3 class="products-card-title">Coffee Beans</h3>
-          <p class="products-card-price">IDR 10K</p>
-          <button type="button" class="cart-btn">Add to Cart</button>
-        </div>
-        <div class="products-card">
-          <img src="img/products/5.jpg" alt="Red Chili" />
-          <h3 class="products-card-title">Red Chili</h3>
-          <p class="products-card-price">IDR 7K/KG</p>
-          <button type="button" class="cart-btn">Add to Cart</button>
-        </div>
-        <div class="products-card">
-          <img src="img/products/6.jpg" alt="Apple" />
-          <h3 class="products-card-title">Apple</h3>
-          <p class="products-card-price">IDR 12K</p>
-          <button type="button" class="cart-btn">Add to Cart</button>
-        </div>
-        <div class="products-card">
-          <img src="img/products/7.jpg" alt="Mushroom" />
-          <h3 class="products-card-title">Mushroom</h3>
-          <p class="products-card-price">IDR 7K</p>
-          <button type="button" class="cart-btn">Add to Cart</button>
-        </div>
-        <div class="products-card">
-          <img src="img/products/8.jpg" alt="Strawberry" />
-          <h3 class="products-card-title">Strawberry</h3>
-          <p class="products-card-price">IDR 15K/KG</p>
-          <button type="button" class="cart-btn">Add to Cart</button>
-        </div>
-        <div class="products-card">
-          <img src="img/products/9.jpg" alt="Raisins" />
-          <h3 class="products-card-title">Raisins</h3>
-          <p class="products-card-price">IDR 5K</p>
-          <button type="button" class="cart-btn">Add to Cart</button>
-        </div>
-        <div class="products-card">
-          <img src="img/products/10.jpg" alt="Nuts" />
-          <h3 class="products-card-title">Nuts</h3>
-          <p class="products-card-price">IDR 10K</p>
-          <button type="button" class="cart-btn">Add to Cart</button>
+      <!-- Category Menu -->
+      <nav class="category-menu">
+        <ul>
+          <li><a href="#" class="category-link active" data-category="all">All Products</a></li>
+          <li><a href="#" class="category-link" data-category="fruits">Fruits</a></li>
+          <li><a href="#" class="category-link" data-category="dairy">Dairy</a></li>
+          <li><a href="#" class="category-link" data-category="grains">Grains</a></li>
+          <li><a href="#" class="category-link" data-category="beverages">Beverages</a></li>
+        </ul>
+      </nav>
+
+      <!-- Products Grid -->
+      <div class="products-layout">
+        <div class="row">
+          <div class="products-card" data-category="grains">
+            <div class="product-img-wrapper">
+                <img src="img/products/1.jpg" alt="Rice" />
+                <button type="button" class="cart-btn">+</button>
+            </div>
+            <h3 class="products-card-title">Rice</h3>
+            <p class="products-card-price">IDR 15K</p>
+          </div>
+          <div class="products-card" data-category="beverages">
+            <div class="product-img-wrapper">
+                <img src="img/products/2.jpg" alt="Tomato Soup" />
+                <button type="button" class="cart-btn">+</button>
+            </div>
+            <h3 class="products-card-title">Tomato Soup</h3>
+            <p class="products-card-price">IDR 24K</p>
+          </div>
+          <div class="products-card" data-category="fruits">
+            <div class="product-img-wrapper">
+                <img src="img/products/3.jpg" alt="Lemon" />
+                <button type="button" class="cart-btn">+</button>
+            </div>
+            <h3 class="products-card-title">Lemon</h3>
+            <p class="products-card-price">IDR 8K</p>
+          </div>
+          <div class="products-card" data-category="beverages">
+            <div class="product-img-wrapper">
+                <img src="img/products/4.jpg" alt="Coffe Beans" />
+                <button type="button" class="cart-btn">+</button>
+            </div>
+            <h3 class="products-card-title">Coffee Beans</h3>
+            <p class="products-card-price">IDR 10K</p>
+          </div>
+          <div class="products-card" data-category="fruits">
+            <div class="product-img-wrapper">
+                <img src="img/products/5.jpg" alt="Red Chili" />
+                <button type="button" class="cart-btn">+</button>
+            </div>
+            <h3 class="products-card-title">Red Chili</h3>
+            <p class="products-card-price">IDR 7K/KG</p>
+          </div>
+          <div class="products-card" data-category="fruits">
+            <div class="product-img-wrapper">
+                <img src="img/products/6.jpg" alt="Apple" />
+                <button type="button" class="cart-btn">+</button>
+            </div>
+            <h3 class="products-card-title">Apple</h3>
+            <p class="products-card-price">IDR 12K</p>
+          </div>
+          <div class="products-card" data-category="grains">
+            <div class="product-img-wrapper">
+                <img src="img/products/7.jpg" alt="Mushroom" />
+                <button type="button" class="cart-btn">+</button>
+            </div>
+            <h3 class="products-card-title">Mushroom</h3>
+            <p class="products-card-price">IDR 7K</p>
+          </div>
+          <div class="products-card" data-category="fruits">
+            <div class="product-img-wrapper">
+                <img src="img/products/8.jpg" alt="Strawberry" />
+                <button type="button" class="cart-btn">+</button>
+            </div>
+            <h3 class="products-card-title">Strawberry</h3>
+            <p class="products-card-price">IDR 15K/KG</p>
+          </div>
+          <div class="products-card" data-category="grains">
+            <div class="product-img-wrapper">
+                <img src="img/products/9.jpg" alt="Raisins" />
+                <button type="button" class="cart-btn">+</button>
+            </div>
+            <h3 class="products-card-title">Raisins</h3>
+            <p class="products-card-price">IDR 5K</p>
+          </div>
+          <div class="products-card" data-category="grains">
+            <div class="product-img-wrapper">
+                <img src="img/products/10.jpg" alt="Nuts" />
+                <button type="button" class="cart-btn">+</button>
+            </div>
+            <h3 class="products-card-title">Nuts</h3>
+            <p class="products-card-price">IDR 10K</p>
+          </div>
         </div>
       </div>
     </section>
     <!-- Products Section end -->
 
+    <!-- Testimony Section start -->
+    <section id="testimonials" class="testimonials">
+      <h2>Testimonials</h2>
+      <button class="nav-btn prev-btn">&lt;</button>
+      <div class="testimonials-container">
+      <div class="testimonials-cards-wrapper">
+          <div class="testimonials-cards">
+          <div class="testimony-card">
+              <img src="img/testimonials/profile.jpg" alt="John Doe" class="profile-photo">
+              <p>"The freshest produce I've ever purchased online. Delivery was quick and the quality exceeded my expectations!"</p>
+              <h4>- John Doe</h4>
+          </div>
+          <div class="testimony-card">
+              <img src="img/testimonials/profile2.jpg" alt="Jane Smith" class="profile-photo">
+              <p>"Their custom meal kits are a lifesaver! Perfect portions and easy recipes make dinner prep stress-free."</p>
+              <h4>- Jane Smith</h4>
+          </div>
+          <div class="testimony-card">
+              <img src="img/testimonials/profile.jpg" alt="Emily White" class="profile-photo">
+              <p>"Consistent quality and great variety. Their subscription service is super convenient for my busy lifestyle."</p>
+              <h4>- Emily White</h4>
+          </div>
+          <div class="testimony-card">
+              <img src="img/testimonials/profile2.jpg" alt="Michael Brown" class="profile-photo">
+              <p>"Customer support was incredibly helpful when I had questions about my order. Highly recommend!"</p>
+              <h4>- Michael Brown</h4>
+          </div>
+          <div class="testimony-card">
+              <img src="img/testimonials/profile.jpg" alt="John Doe" class="profile-photo">
+              <p>"The freshest produce I've ever purchased online. Delivery was quick and the quality exceeded my expectations!"</p>
+              <h4>- John Doe</h4>
+          </div>
+          <div class="testimony-card">
+              <img src="img/testimonials/profile2.jpg" alt="Jane Smith" class="profile-photo">
+              <p>"Their custom meal kits are a lifesaver! Perfect portions and easy recipes make dinner prep stress-free."</p>
+              <h4>- Jane Smith</h4>
+          </div>
+          <div class="testimony-card">
+              <img src="img/testimonials/profile.jpg" alt="Emily White" class="profile-photo">
+              <p>"Consistent quality and great variety. Their subscription service is super convenient for my busy lifestyle."</p>
+              <h4>- Emily White</h4>
+          </div>
+          <div class="testimony-card">
+              <img src="img/testimonials/profile2.jpg" alt="Michael Brown" class="profile-photo">
+              <p>"Customer support was incredibly helpful when I had questions about my order. Highly recommend!"</p>
+              <h4>- Michael Brown</h4>
+          </div>
+          </div>
+      </div>
+      </div>
+      <button class="nav-btn next-btn">&gt;</button>
+      <div class="dots-nav">
+      <span class="dot" data-index="0"></span>
+      <span class="dot" data-index="1"></span>
+      <span class="dot" data-index="2"></span>
+      <span class="dot" data-index="3"></span>
+      </div>
+    </section>
+    <!-- Testimony Section end -->
+
     <!-- Contact Section start -->
     <section id="contact" class="contact">
-      <h2>Contact Us</h2>
-      <p>Have a question? Our customer service team is here to provide quick and personalized assistance. Whether resolving an issue or exploring our products, we're ready to help. Your satisfaction is our priority.</p>
 
       <div class="row">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d997.4057133580891!2d100.27702626951707!3d-0.5671519999642005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMMKwMzQnMDEuOCJTIDEwMMKwMTYnMzkuNiJF!5e0!3m2!1sen!2sid!4v1720246354881!5m2!1sen!2sid"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          class="map"
-        ></iframe>
+          <div class="text-section">
+              <h2>Contact Us</h2>
+              <p>Have a question? Our customer service team is here to provide quick and personalized assistance. Whether resolving an issue or exploring our products, we're ready to help. Your satisfaction is our priority.</p>
+          </div>
+          <iframe
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d997.4057133580891!2d100.27702626951707!3d-0.5671519999642005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMMKwMzQnMDEuOCJTIDEwMMKwMTYnMzkuNiJF!5e0!3m2!1sen!2sid!4v1720246354881!5m2!1sen!2sid"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              class="map"
+          ></iframe>
 
-        <form action="">
-          <div class="input-group">
-            <!-- <i>[SVG-User]</i> -->
-            <input type="text" placeholder="name" />
-          </div>
-          <div class="input-group">
-            <!-- [SVG-Mail] -->
-            <input type="text" placeholder="email" />
-          </div>
-          <div class="input-group">
-            <!-- [SVG-Phone] -->
-            <textarea id="message" name="message" rows="12" placeholder="type your message here..."></textarea>
-          </div>
-          <button type="submit" class="btn">Send Message</button>
-        </form>
+          <form action="">
+              <div class="input-group">
+                  <input type="text" placeholder="name" />
+              </div>
+              <div class="input-group">
+                  <input type="text" placeholder="email" />
+              </div>
+              <div class="input-group">
+                  <textarea id="message" name="message" rows="6" placeholder="type your message here..."></textarea>
+              </div>
+              <button type="submit" class="btn">Send Message</button>
+          </form>
       </div>
     </section>
     <!-- Contact Section end -->
 
     <!-- Footer start -->
     <footer>
-      <div class="socials">
-        <a href="#"><i data-feather="instagram"></i></a>
-        <a href="#"><i data-feather="twitter"></i></a>
-        <a href="#"><i data-feather="facebook"></i></a>
+      <div class="footer-container">
+          <div class="footer-contact">
+              <h3>Contact Us</h3>
+              <p><i data-feather="phone"></i>
+                <strong>Phone: </strong> +62 123 456 789
+              </p>
+              <p><i data-feather="mail"></i>
+                <strong>Email:</strong> contact@mybusiness.com
+              </p>
+          </div>
 
-        <div class="credit">
+          <div class="footer-contact">
+              <h3>Location</h3>
+              <p><i data-feather="map-pin"></i>
+                <strong>Address: </strong>123 Main Street, Jakarta, Indonesia
+              </p>
+          </div>
+          <div class="socials">
+              <div class="footer-title">
+                  <h3>Follow Us</h3>
+              </div>
+              <div class="footer-icons">
+                  <a href="https://www.instagram.com/armadhani_hiro/"><i data-feather="instagram"></i></a>
+                  <a href="https://www.facebook.com/armadhanihiroo/"><i data-feather="facebook"></i></a>
+                  <a href="https://www.linkedin.com/in/armadhanihiro/"><i data-feather="linkedin"></i></a>
+              </div>
+          </div>
+      </div>
+
+      <div class="credit">
           <p>Created by <a href="">armadhanihiro</a>. | &copy; 2024.</p>
-        </div>
       </div>
     </footer>
     <!-- Footer end -->

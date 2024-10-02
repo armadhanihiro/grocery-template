@@ -15,7 +15,7 @@
     <script src="https://unpkg.com/feather-icons"></script>
 
     <!-- Style -->
-    <link rel="stylesheet" href="css/product.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
     <!-- AlpineJS -->
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
@@ -25,19 +25,12 @@
   </head>
   <body>
     <nav class="navbar">
-      <a href="#" class="navbar-logo"><span>H2H</span>Market</a>
-
-      <div class="navbar-nav">
-        <a href="index.html">Home</a>
-        <a href="#about">About</a>
-        <a href="products.html">Products</a>
-        <a href="#contact">Contact</a>
-      </div>
+      <a href="index.html" class="navbar-logo">Grocery <span>Groove</span></a>
 
       <div class="navbar-extra">
-        <a href="#" id="search-button">[SVG-Search]</a>
-        <a href="#" id="shopping-cart-button">[SVG-Chart]</a>
-        <a href="#" id="grocery-products">[SVG-Bar]</a>
+        <a href="#" id="search-button"><i data-feather="search"></i></a>
+        <a href="#" id="shopping-cart-button"><i data-feather="shopping-cart"></i></a>
+        <a href="#" id="grocery-products"><i data-feather="menu"></i></a>
       </div>
 
       <!-- Search Form start -->
@@ -50,28 +43,28 @@
       <!-- Shopping Cart start -->
       <div class="shopping-cart">
         <div class="cart-item">
-          <img src="[IMG-Products-1]" alt="Rice" />
+          <img src="img/products/1.jpg" alt="Rice" />
           <div class="item-detail">
             <h3>Tomato Soup</h3>
             <div class="item-price">IDR 15K</div>
           </div>
-          <i class="remove-item">[SVG-Trash]</i>
+          <i class="remove-item" data-feather="trash-2"></i>
         </div>
         <div class="cart-item">
-          <img src="[IMG-Products-2]" alt="Rice" />
+          <img src="img/products/2.jpg" alt="Rice" />
           <div class="item-detail">
             <h3>Rice</h3>
             <div class="item-price">IDR 24K</div>
           </div>
-          <i class="remove-item">[SVG-Trash]</i>
+          <i class="remove-item" data-feather="trash-2"></i>
         </div>
         <div class="cart-item">
-          <img src="[IMG-Products-3]" alt="Rice" />
+          <img src="img/products/3.jpg" alt="Rice" />
           <div class="item-detail">
             <h3>Lemon</h3>
             <div class="item-price">IDR 8K</div>
           </div>
-          <i class="remove-item">[SVG-Trash]</i>
+          <i class="remove-item" data-feather="trash-2"></i>
         </div>
       </div>
 
@@ -79,73 +72,156 @@
     </nav>
     <!-- Navbar end -->
 
-    <section class="products" id="products">
-      <h2><span>Produk Unggulan</span> Kami</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo unde eum, ab fuga possimus iste.</p>
+     <!-- Products Section start -->
+
+    <section id="products" class="products">
+      <!-- <h2>Products</h2> -->
+      <p>
+        Discover our range of fresh ingredients and gourmet selections, sourced from trusted suppliers and local producers. From artisanal goods to household staples, we offer options to suit every taste and dietary preference, delivered
+        conveniently to your door.
+      </p>
 
       <div class="row">
-        <div class="product-card">
-          <div class="product-icons">
-            <a href="#"><i data-feather="shopping-cart"></i></a>
-            <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+        <div class="products-card">
+          <img src="img/products/1.jpg" alt="Rice" />
+          <h3 class="products-card-title">Rice</h3>
+          <div class="product-stars">
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
           </div>
-          <div class="product-image">
-            <img src="[IMG-Products-1]" alt="Product 1" />
-          </div>
-          <div class="product-content">
-            <h3>Rice</h3>
-            <div class="product-stars">
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star"></i>
-            </div>
-            <div class="product-price">IDR 15K <span>IDR 24K</span></div>
-          </div>
+          <p class="products-card-price">IDR 15K</p>
+          <button type="button" class="cart-btn">Add to Cart</button>
         </div>
-        <div class="product-card">
-          <div class="product-icons">
-            <a href="#"><i data-feather="shopping-cart"></i></a>
-            <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+        <div class="products-card">
+          <img src="img/products/2.jpg" alt="Tomato Soup" />
+          <h3 class="products-card-title">Tomato Soup</h3>
+          <div class="product-stars">
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
           </div>
-          <div class="product-image">
-            <img src="[IMG-Products-2]" alt="Product 1" />
-          </div>
-          <div class="product-content">
-            <h3>Tomato Soup</h3>
-            <div class="product-stars">
-              <i data-feather="star"></i>
-              <i data-feather="star"></i>
-              <i data-feather="star"></i>
-              <i data-feather="star"></i>
-              <i data-feather="star"></i>
-            </div>
-            <div class="product-price">IDR 24K <span>IDR 43K</span></div>
-          </div>
+          <p class="products-card-price">IDR 24K</p>
+          <button type="button" class="cart-btn">Add to Cart</button>
         </div>
-        <div class="product-card">
-          <div class="product-icons">
-            <a href="#"><i data-feather="shopping-cart"></i></a>
-            <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+        <div class="products-card">
+          <img src="img/products/3.jpg" alt="Lemon" />
+          <h3 class="products-card-title">Lemon</h3>
+          <div class="product-stars">
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
           </div>
-          <div class="product-image">
-            <img src="[IMG-Products-3]" alt="Product 1" />
+          <p class="products-card-price">IDR 8K</p>
+          <button type="button" class="cart-btn">Add to Cart</button>
+        </div>
+        <div class="products-card">
+          <img src="img/products/4.jpg" alt="Coffee Beans" />
+          <h3 class="products-card-title">Coffee Beans</h3>
+          <div class="product-stars">
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
           </div>
-          <div class="product-content">
-            <h3>Lemon</h3>
-            <div class="product-stars">
-              <i data-feather="star"></i>
-              <i data-feather="star"></i>
-              <i data-feather="star"></i>
-              <i data-feather="star"></i>
-              <i data-feather="star"></i>
-            </div>
-            <div class="product-price">IDR 8K <span>IDR 15K</span></div>
+          <p class="products-card-price">IDR 10K</p>
+          <button type="button" class="cart-btn">Add to Cart</button>
+        </div>
+        <div class="products-card">
+          <img src="img/products/5.jpg" alt="Red Chili" />
+          <h3 class="products-card-title">Red Chili</h3>
+          <div class="product-stars">
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
           </div>
+          <p class="products-card-price">IDR 7K/KG</p>
+          <button type="button" class="cart-btn">Add to Cart</button>
+        </div>
+        <div class="products-card">
+          <img src="img/products/6.jpg" alt="Apple" />
+          <h3 class="products-card-title">Apple</h3>
+          <div class="product-stars">
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+          </div>
+          <p class="products-card-price">IDR 12K</p>
+          <button type="button" class="cart-btn">Add to Cart</button>
+        </div>
+        <div class="products-card">
+          <img src="img/products/7.jpg" alt="Mushroom" />
+          <h3 class="products-card-title">Mushroom</h3>
+          <div class="product-stars">
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+          </div>
+          <p class="products-card-price">IDR 7K</p>
+          <button type="button" class="cart-btn">Add to Cart</button>
+        </div>
+        <div class="products-card">
+          <img src="img/products/8.jpg" alt="Strawberry" />
+          <h3 class="products-card-title">Strawberry</h3>
+          <div class="product-stars">
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+          </div>
+          <p class="products-card-price">IDR 15K/KG</p>
+          <button type="button" class="cart-btn">Add to Cart</button>
+        </div>
+        <div class="products-card">
+          <img src="img/products/9.jpg" alt="Raisins" />
+          <h3 class="products-card-title">Raisins</h3>
+          <div class="product-stars">
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+          </div>
+          <p class="products-card-price">IDR 5K</p>
+          <button type="button" class="cart-btn">Add to Cart</button>
+        </div>
+        <div class="products-card">
+          <img src="img/products/10.jpg" alt="Nuts" />
+          <h3 class="products-card-title">Nuts</h3>
+          <div class="product-stars">
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+          </div>
+          <p class="products-card-price">IDR 10K</p>
+          <button type="button" class="cart-btn">Add to Cart</button>
         </div>
       </div>
     </section>
     <!-- Products Section end -->
+
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- Javascript -->
+    <script src="js/script.js"></script>
   </body>
 </html>
