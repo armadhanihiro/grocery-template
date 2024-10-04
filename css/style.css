@@ -1091,8 +1091,13 @@ footer .credit a {
     }
 
     .hero {
-        min-height: 70vh;
+        min-height: 100vh;
         background-position: top;
+    }
+
+    .hero .content {
+      padding: 1rem 7%;
+      max-width: 62rem;
     }
 
     .best-seller .row-best {
@@ -1255,7 +1260,7 @@ footer .credit a {
     }
 
     .hero {
-        min-height: 55vh;
+        min-height: 100vh;
         background-position: top;
     }
 
@@ -1331,7 +1336,7 @@ footer .credit a {
 
     .about .row .content {
         padding: 2rem 0 0;
-        text-align: center;
+        text-align: justify;
     }
 
     .about .row .about-img img {
