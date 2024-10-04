@@ -24,7 +24,7 @@ html {
 body {
   font-family: 'Poppins', sans-serif;
   background-color: var(--bg);
-  color: #000;
+  color: #333;
 }
 
 /* Navbar */
@@ -98,27 +98,29 @@ body {
 /* Navbar search form */
 .navbar .search-form {
   position: absolute;
-  top: 100%;
-  right: 7%;
+  right: 10%;
   background-color: #fff;
-  width: 50rem;
-  height: 5rem;
+  width: 0;
+  height: 2.5rem;
+  border-radius: 10px;
   display: flex;
   align-items: center;
-  transform: scaleY(0);
-  transform-origin: top;
-  transition: 0.3s;
+  overflow: hidden;
+  transform-origin: right;
+  transition: width 0.5s ease, right 0.5s ease;
 }
 
 .navbar .search-form.active {
-  transform: scaleY(1);
+  width: 20rem;
+  right: 10%;
+  height: 2.5rem;
 }
 
 .navbar .search-form input {
   height: 100%;
   width: 100%;
   font-size: 1.6rem;
-  color: var(--bg);
+  color: #333;
   padding: 1rem;
 }
 
@@ -539,7 +541,7 @@ body {
 
 .close:hover,
 .close:focus {
-  color: #000;
+  color: #333;
   text-decoration: none;
   cursor: pointer;
 }
