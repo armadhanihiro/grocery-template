@@ -74,22 +74,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
     quickViewButtons.forEach(button => {
         button.addEventListener('click', () => {
-        const modalId = button.getAttribute('data-modal');
-        const modal = document.getElementById(modalId);
-        modal.style.display = 'block';
+          const modalId = button.getAttribute('data-modal');
+          const modal = document.getElementById(modalId);
+          modal.style.display = 'block';
         });
     });
 
     closeButtons.forEach(button => {
         button.addEventListener('click', () => {
-        const modal = button.closest('.modal');
-        modal.style.display = 'none';
+          const modal = button.closest('.modal');
+          modal.style.display = 'none';
         });
     });
 
     window.addEventListener('click', (event) => {
         if (event.target.classList.contains('modal')) {
-        event.target.style.display = 'none';
+          event.target.style.display = 'none';
         }
     });
 });
@@ -102,38 +102,38 @@ document.addEventListener("DOMContentLoaded", function () {
     const totalCards = dots.length;
 
     function updateSlide(index) {
-    const cardWidth = testimonyCard.offsetWidth + 30;
-    testimonialsCards.style.transform = `translateX(-${index * cardWidth}px)`;
-    dots.forEach(dot => dot.classList.remove("active"));
-    dots[index].classList.add("active");
+      const cardWidth = testimonyCard.offsetWidth + 30;
+      testimonialsCards.style.transform = `translateX(-${index * cardWidth}px)`;
+      dots.forEach(dot => dot.classList.remove("active"));
+      dots[index].classList.add("active");
     }
 
     function nextSlide() {
-    currentIndex = (currentIndex + 1) % totalCards;
-    updateSlide(currentIndex);
+      currentIndex = (currentIndex + 1) % totalCards;
+      updateSlide(currentIndex);
     }
 
     let slideInterval = setInterval(nextSlide, 3000);
 
     dots.forEach(dot => {
-    dot.addEventListener("click", function () {
-        clearInterval(slideInterval);
-        currentIndex = parseInt(dot.getAttribute("data-index"));
-        updateSlide(currentIndex);
-        slideInterval = setInterval(nextSlide, 3000);
-    });
+      dot.addEventListener("click", function () {
+          clearInterval(slideInterval);
+          currentIndex = parseInt(dot.getAttribute("data-index"));
+          updateSlide(currentIndex);
+          slideInterval = setInterval(nextSlide, 3000);
+      });
     });
 
     document.querySelector(".prev-btn").addEventListener("click", function () {
-    clearInterval(slideInterval);
-    currentIndex = (currentIndex - 1 + totalCards) % totalCards;
-    updateSlide(currentIndex);
-    slideInterval = setInterval(nextSlide, 3000);
+      clearInterval(slideInterval);
+      currentIndex = (currentIndex - 1 + totalCards) % totalCards;
+      updateSlide(currentIndex);
+      slideInterval = setInterval(nextSlide, 3000);
     });
 
     document.querySelector(".next-btn").addEventListener("click", function () {
-    clearInterval(slideInterval);
-    nextSlide();
-    slideInterval = setInterval(nextSlide, 3000);
+      clearInterval(slideInterval);
+      nextSlide();
+      slideInterval = setInterval(nextSlide, 3000);
     });
 });
